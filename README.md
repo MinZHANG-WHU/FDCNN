@@ -7,7 +7,7 @@ The implementation uses the [Caffe](https://github.com/BVLC/caffe) framework.
 ## Motivation
 
 
-In this work, we use scene-level samples (from the AID data set) of remote sensing scene classification, which are easier to obtain than pixel-level samples, for learning deep features from different remote sensing scenes. These features learned from specific scenes (cultivated land, lakes, vegetation, etc.) are more affected. The changes in these scenes are usually more important. Based on this idea, A new CNN structure and training strategies are proposed for remote sensing image change detection, which is supervised but requires very few pixel-level training samples.
+In this work, we use scene-level samples (from the AID data set) of remote sensing scene classification, which are easier to obtain than pixel-level samples, for learning deep features from different remote sensing scenes at different scales. These features learned from specific scenes (cultivated land, lakes, vegetation, etc.) are more affected. The changes in these scenes are usually more important. Based on this idea, A new CNN structure and training strategies are proposed for remote sensing image change detection, which is supervised but requires very few pixel-level training samples. Advantageously, it has good generalization ability and multi-scale change detection capabilities.
 
 
 ## Content
@@ -80,7 +80,7 @@ The available datasets can be downloaded from the table below:
 
 1. Install Caffe with Python 2.7
 
-	Follow the instructions in [Installation](http://caffe.berkeleyvision.org/installation.html). Note the version of Python.
+	Follow the instructions in [Installation](http://caffe.berkeleyvision.org/installation.html). Note the version of Python. Or use our [pre-build runtime](https://drive.google.com/open?id=1OLIgpx0Jy6LT0KCkgYLcb0d3FvAJXEA0) (CUDA 8.0).
 
 2. Training VGG16 & FDCNN
 
@@ -115,7 +115,9 @@ The available datasets can be downloaded from the table below:
             python exp_test_OSCD.py \
                 --threshold=0.98
             ```
-            The ground truth of OSCD remains undisclosed and the results need be uploaded to [the IEEE GRSS DASE website](http://dase.grss-ieee.org/) for evaluation.
+            The ground truth of OSCD remains undisclosed and the results need be uploaded to [the IEEE GRSS DASE website](http://dase.grss-ieee.org/) for evaluation, see figure 1.
+            ![](/output/OSCD.png)
+            <center>Figure 1. FDCNN accuracy evaluation on the OSCD dataset.</center>
     
     Change magnitude map (CMM.tif) and binary image (BM.tif) will be generated under the "output" subfolder.
 
