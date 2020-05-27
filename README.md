@@ -21,7 +21,7 @@ We proposed a novel FDCNN to produce change detection maps from high-resolution 
 
 ### Datasets
 
-We will open all data sets after the paper is published. The available datasets can be downloaded from the table below:
+The available datasets can be downloaded from the table below:
 
 <table>
 <caption>Tabel 1. Experiment datasets.</caption>
