@@ -80,7 +80,8 @@ The available datasets can be downloaded from the table below:
 
 1. Install Caffe with Python 2.7
 
-	Follow the instructions in [Installation](http://caffe.berkeleyvision.org/installation.html). Note the version of Python. Or use our [pre-build runtime](https://drive.google.com/open?id=1OLIgpx0Jy6LT0KCkgYLcb0d3FvAJXEA0) (CUDA 8.0).
+	1. Follow the instructions in [Installation](http://caffe.berkeleyvision.org/installation.html). Note the version of Python, or use our [pre-build runtime](https://drive.google.com/open?id=1OLIgpx0Jy6LT0KCkgYLcb0d3FvAJXEA0) (CUDA 8.0).
+	2. Please add the absolute path of folder "caffe_layers" to the PYTHONPATH so that PyCaffe can search for the layer implementation file.
 
 2. Training VGG16 & FDCNN
 

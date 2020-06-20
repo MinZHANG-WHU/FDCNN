@@ -1,7 +1,7 @@
 # VGG16_LR
 
 
-We reimplemented the method of the paper《Change Cetection Based on Deep Features and Low Rank》, and evaluated it and found that its performance was similar to that in the original paper. If you use this code for your papers or projects, please take the time to cite our paper.
+We reimplemented the method of the paper entitled **Change Detection Based on Deep Features and Low Rank**, and evaluated it and found that its performance was similar to that in the original paper. The pre-trained VGG16 model using the AID dataset can be downloaded [here](../pre-trained/README.md). If you use this code for your papers or projects, please take the time to cite our paper.
 ```
 
 @Article{9052762,
