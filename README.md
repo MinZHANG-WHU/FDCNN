@@ -33,7 +33,7 @@ The available datasets can be downloaded from the table below:
     <tr>
 	    <td>AID</td>
         <td>10,000 RS images (R, G and B), including 30 different scene types (i.e. labeled 30 types at scene-level), each containing more than 220 images with a size of 600×600 pixels and a spatial resolution of 8 meters to 0.5 meters, collected in different countries (China, USA, UK, France, etc.), at different times and in different imaging conditions</td>
-        <td colspan="2">[<a href="http://www.lmars.whu.edu.cn/xia/AID-project.html" target="_blank">official</a>]</td>
+        <td colspan="2"> [<a href="http://www.captain-whu.com/project/AID/" target="_blank">official</a>]</td>
 	</tr>
     <tr>
 	    <td rowspan = "4">Worldview 2 </td>
@@ -80,7 +80,7 @@ The available datasets can be downloaded from the table below:
 
 1. Install Caffe with Python 2.7
 
-	1. Follow the instructions in [Installation](http://caffe.berkeleyvision.org/installation.html). Note the version of Python, or use our [pre-build runtime](https://drive.google.com/open?id=1OLIgpx0Jy6LT0KCkgYLcb0d3FvAJXEA0) (with CUDA 8.0 and for Windows only).
+	1. Follow the instructions in [Installation](http://caffe.berkeleyvision.org/installation.html), note the version of Python. Or using our [pre-build runtime](https://drive.google.com/open?id=1OLIgpx0Jy6LT0KCkgYLcb0d3FvAJXEA0) (with CUDA 8.0 and for Windows only).
 	2. Please add the absolute path of folder "caffe_layers" to the PYTHONPATH so that PyCaffe can search for the layer implementation file.
 
 2. Training VGG16 & FDCNN
@@ -94,24 +94,24 @@ The available datasets can be downloaded from the table below:
 
     1. Download the test data sets and unzip them to the "datasets"  subfolder.
     
-    2. Using your own trained FDCNN model, or download our [pre-trained FDCNN model](https://drive.google.com/open?id=1v1Q9gOqgzk657aaPWfEirSR-aJafF7BS).
+    2. Use your own trained FDCNN model, or download our [pre-trained FDCNN model](https://drive.google.com/open?id=1v1Q9gOqgzk657aaPWfEirSR-aJafF7BS).
     
     3. Evaluation
     
-        - To test the accuracy of FDCNN on the test datasets, run the following commands below:
+        - To test the accuracy of FDCNN on the test datasets, run the following commands:
             ```
             python exp_test_custom.py \
                 --sensor=ZY3 \
                 --alpha=2.0
             ```
 
-        - To test the accuracy of FDCNN on the SZTAKI datasets, run the following commands below:
+        - To test the accuracy of FDCNN on the SZTAKI datasets, run the following commands:
             ```
             python exp_test_SZTAKI.py \
                 --alpha=2.66
             ```
         
-        - To test the accuracy of FDCNN on the OSCD datasets, run the following commands below:
+        - To test the accuracy of FDCNN on the OSCD datasets, run the following commands:
             ```
             python exp_test_OSCD.py \
                 --threshold=0.98
