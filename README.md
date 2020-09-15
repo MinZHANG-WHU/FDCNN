@@ -124,7 +124,7 @@ The available datasets can be downloaded from the table below:
 
 ## References
 
-If you use this work for your projects, please take the time to cite our paper.
+If you use this work for your projects, please take the time to cite our [paper](https://doi.org/10.1109/TGRS.2020.2981051).
 
 ```
 @Article{9052762,
